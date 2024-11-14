@@ -7,12 +7,15 @@ async function createEntries () {
 
     let response = await client.query(insetUserQuery, userValues);
 
-    console.log(response)
     const todoQuery = `INSERT INTO todos (title  , description , user_id ) VALUES ($1 , $2 , $3 ) RETURNING id`;
     const todoValues = ["Go To GYM " , "TOday at 8" , response.rows[0].id] ;
 
     await client.query(todoQuery , todoValues) ;
     console.log("Added data into Tables ");
 }
+
+// finally {
+//     await client.end();
+//   }
 
 createEntries() ;
