@@ -1,0 +1,26 @@
+{
+  "name": "sql",
+  "version": "1.0.0",
+  "description": "- SQL is a standard database `language` used to access and manipulate data in databases.  - SQL stands for Structured Query Language. It was developed by IBM Computer Scientists in the 1970s. By executing queries SQL can create, update, delete, and retrieve data `in databases` like MySQL, Oracle, PostgreSQL, etc. Overall, SQL is a query language that communicates with databases. - SQL (Structured Query Language) is designed for managing and querying data in `relational` databases. A relational database organizes data into tables (also called relations), where each table consists of rows and columns.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.46.1",
+    "pg": "^8.13.1",
+    "punycode": "^2.3.1" ,
+"resolutions": {
+  "whatwg-url": "^13.0.0"
+}
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10"
+  }
+}
+
+
