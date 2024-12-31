@@ -30,4 +30,4 @@ async function getTodosOfUsers(userID : number) {
 
 getUsers() ;
 getUserByEmail("aakshbwd@gmail.com");
-getTodosOfUsers(3);
+getTodosOfUsers(1);

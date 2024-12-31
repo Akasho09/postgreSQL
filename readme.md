@@ -12,6 +12,12 @@ Using parameters instead of directly embedding values helps prevent SQL injectio
 # Postgresql
 PostgreSQL is an advanced and open-source relational database management system (RDBMS) and is used as a database for many web applications, mobile and analytics applications. It supports both SQL (relational) and JSON (non-relational) querying and It is a stable database supported by more than 20 years of development by the open-source community.
 
+## Settings up locally
+- brew install postgresql@15
+- brew services start postgresql@15 // restart
+- psql postgresql
+\q --> to exit 
+
 # JOINS --> DEFAULT = INNER 
 ## INNER JOIN
 The INNER JOIN keyword selects records that have matching values in both tables. It returns only the rows where there is a match in both tables.
@@ -26,7 +32,7 @@ Definition: The RIGHT JOIN (or RIGHT OUTER JOIN) keyword returns all records fro
 Definition: The FULL OUTER JOIN keyword returns all records when there is a match in either the left (table1) or right (table2) table. It returns NULL for non-matching rows from both tables.
 
 <!-- # ElephantSQL - PostGresql AAS  -->
-<!-- // psql -h trumpet.db.elephantsql.com -p 5432 -U wzsxsnxg  -->
+// psql -h trumpet.db.elephantsql.com -p 5432 -U wzsxsnxg 
 
 # supabase 
 https://supabase.com/dashboard/project/bjzudewjefvctbanpros/sql/14fa0993-4087-4f56-b9fb-b8f5473d0331
@@ -43,6 +49,7 @@ postgresql://postgres.bjzudewjefvctbanpros:SCA8K.6HghyNT%23Q@aws-0-ap-south-1.po
 
 - psql -h <host> -U <username> -d <database_name> -p 5432
 psql -h aws-0-ap-south-1.pooler.supabase.com -U postgres.bjzudewjefvctbanpros -d postgres -p 6543
+- psql -h dpg-csqr00ij1k6c73c1eqb0-a -U akash_7nnv_user  -p 5432
 
 - remote procedure call
 
