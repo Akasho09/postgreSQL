@@ -13,10 +13,15 @@ Using parameters instead of directly embedding values helps prevent SQL injectio
 PostgreSQL is an advanced and open-source relational database management system (RDBMS) and is used as a database for many web applications, mobile and analytics applications. It supports both SQL (relational) and JSON (non-relational) querying and It is a stable database supported by more than 20 years of development by the open-source community.
 
 ## Settings up locally
+### usually brew and psql 
 - brew install postgresql@15
 - brew services start postgresql@15 // restart
 - psql postgresql
-\q --> to exit 
+\q --> to exit or exit
+### using docker and psql
+
+
+
 
 # JOINS --> DEFAULT = INNER 
 ## INNER JOIN
